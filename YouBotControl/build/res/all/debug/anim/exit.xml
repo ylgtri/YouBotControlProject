@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set>
+    <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:propertyName="x"
+                    android:valueType="floatType"
+                    android:valueFrom="1"
+                    android:valueTo="0"
+                    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+                    android:duration="@android:integer/config_shortAnimTime"/>
+</set><!-- From: file:/home/yunyu/AndroidStudioProjects/YouBotControlProject/YouBotControl/src/main/res/anim/exit.xml -->

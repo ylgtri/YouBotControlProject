@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Image display"
+            />
+
+    <edu.gatech.gtri.visualservo.android.Joystick
+            android:id="@+id/joystick"
+            android:layout_width="1.5in"
+            android:layout_height="1.5in"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"/>
+
+    <edu.gatech.gtri.visualservo.android.RightJoystick
+            android:id="@+id/joystick2"
+            android:layout_width="1.5in"
+            android:layout_height="1.5in"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"/>
+
+    <edu.gatech.gtri.visualservo.android.CenteredSeekBar
+            android:id="@+id/center1"
+            android:layout_width="1.5in"
+            android:layout_height="0.5in"
+            android:layout_above="@+id/joystick"
+            android:layout_alignParentLeft="true"/>
+
+    <edu.gatech.gtri.visualservo.android.CenteredSeekBar
+            android:id="@+id/center2"
+            android:layout_width="1.5in"
+            android:layout_height="0.5in"
+            android:layout_above="@+id/joystick2"
+            android:layout_alignLeft="@+id/joystick2"/>
+
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:onClick="toggleMode"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/settings"/>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="RightJoystick">
+        <attr name="margins" format="float" />
+    </declare-styleable>
+</resources>
